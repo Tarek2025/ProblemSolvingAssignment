@@ -33,3 +33,20 @@ console.log(building2);
 
 var building3=brickCalculator(35);
 console.log(building3);
+
+//woodCalculator
+function woodCalculator(chair,table,khat){
+    var chairCount=chair*1;
+    var tableCount=table*3;
+    var khatCount=khat*5;
+     var totalWood=chairCount+tableCount+khatCount;
+
+     return totalWood;
+}
+var woodResult=woodCalculator(8,2,4);
+console.log(woodResult);
+
+//tinyFriend
+function tinyFriend(name){
+
+}
