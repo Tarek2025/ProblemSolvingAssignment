@@ -48,5 +48,15 @@ console.log(woodResult);
 
 //tinyFriend
 function tinyFriend(name){
-
+    var small=name[0];
+    for(var i=0;i<name.length;i++){
+        var currentName=name[i];
+        if(currentName<small){
+            small=currentName;
+        }
+    }
+    return small;
 }
+var smallName=tinyFriend(['tarek','dipu','rana','dip','kamal']);
+
+console.log(smallName);
