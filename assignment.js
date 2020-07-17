@@ -46,17 +46,19 @@ function woodCalculator(chair,table,khat){
 var woodResult=woodCalculator(8,2,4);
 console.log(woodResult);
 
-//tinyFriend
-function tinyFriend(name){
-    var small=name[0];
-    for(var i=0;i<name.length;i++){
-        var currentName=name[i];
-        if(currentName<small){
-            small=currentName;
-        }
-    }
-    return small;
-}
-var smallName=tinyFriend(['tarek','dipu','rana','dip','kamal']);
+//tinyFriends
 
-console.log(smallName);
+
+function tinyFriend(names){
+
+    var small = names[0];
+        for(var i = 0 ; i<names.length ; i++){
+            if(small.length > names[i].length){
+                var small = names[i];
+            }
+        }
+        return small; 
+}
+
+var friend = ['Tarek','Rana','Helal','Shakil','Dip','Abdullah','Dipu','kamal','R','Ru','jajal'];
+console.log(tinyFriend(friend));
